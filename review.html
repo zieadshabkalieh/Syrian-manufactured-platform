@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/msg722956773-63132.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title> المنصة الصناعية | ثقة و جودة</title>
+</head>
+<body>
+
+<!-- update -->
+<div class="note">
+    <div class="update">
+        <div class="update-cont">
+            <p>
+                <b>هام:</b> يمكن للموظف الاداري إضافة ملاحظة هنا
+            </p>
+
+        </div>
+    </div>
+
+</div>
+<!-- header -->
+<div class="header">
+    <nav class="header1">
+        <div class="logo">
+            <img src="./images/5779369841482904912.jpg">
+        </div>
+
+        <div class="hero-nav-links" id="navlinks">
+            <i class="fa fa-remove" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="products.html"> المنتجات</a></li>
+                <li><a href="newsupdates.html">احدث الأخبار</a></li>
+                <li><a href="promotion.html" > الخصومات</a></li>
+                <li><a href="help.html">المساعدة</a></li>
+            </ul>
+        </div>
+
+
+        <div class='log'>
+            <div class="search-container">
+                <form action="#" method="get">
+                    <input type="text" id="search-input" placeholder="Search here...">
+                    <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="overlay"></div>
+
+            <div class="search-box-expanded">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="ابحث هنا..." name="search" id="search" autocomplete="on">
+                    <button type="submit" aria-label="بحث" value="بحث"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <a href="#!" id="user-icon">
+                <img src="./images/icons8-user-24.png" id="userlogo" alt="رمز المستخدم">
+            </a>
+            
+            <div id="popup">
+                <button>عرض الملف</button>
+                <button>تعديل الملف</button>
+                <button>
+                    <a href="orders.html">
+                        قائمة الطلبات
+                    </a>
+                </button>
+                <button>
+                    <a href="review.html">
+                        إضافة مراجعة
+                    </a>
+                </button>
+            </div>
+            
+            
+                
+            <a href='login.html' id='login'>تسجيل الدخول</a>
+
+            <div class='fa fa-bars' onclick='showmenu()'></div>
+        </div>
+    </nav>
+</div>
+<div class="order-list-title">
+    <strong> &nbsp اطلع على اهم المراجعات </strong>
+</div>
+    <table>
+        <thead>
+            <tr>
+                <th>الرأي</th>
+                <th>المستخدم</th>
+                <th>المنتج</th>
+                <th>التعليق</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ممتاز</td>
+                <td>أحمد</td>
+                <td>صنع في سوريا</td>
+                <td>منتج رائع جداً، أنصح به!</td>
+            </tr>
+            <tr>
+                <td> ضعيف</td>
+                <td>ليلى</td>
+                <td>..........</td>
+                <td>لا يستحق الشراء، جودة ضعيفة</td>
+            </tr>
+        </tbody>
+    </table>
+    <form class="review-form">
+        <label for="opinion">الرأي:</label>
+        <input type="text" id="opinion" name="opinion" required>
+    
+        <label for="username">اسم المنتج:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="comment">التعليق:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+        <button type="submit">إضافة مراجعة</button>
+    </form>
+    <script src="hero.js"></script>
+</body>
+</html>

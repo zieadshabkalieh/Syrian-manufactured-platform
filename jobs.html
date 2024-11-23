@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="hero.js" defer></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="icon" href="./images/msg722956773-63132.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title> المنصة الصناعية | ثقة و جودة</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company Job Management</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <nav class="header1">
+                <div class="logo">
+                  <img src="./images/5779369841482904912.jpg">
+                </div>
+
+                <div class="hero-nav-links" id="navlinks">
+                    <i class="fa fa-remove" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="home.html">الرئيسية</a></li>
+                        <li><a href="products.html"> المنتجات</a></li>
+                        <li><a href="newsupdates.html">احدث الأخبار</a></li>
+                        <li><a href="promotion.html"> الخصومات</a></li>
+                        <li><a href="help.html">المساعدة</a></li>
+                    </ul>
+                </div>
+
+
+                <div class='log'>
+                  <div class="search-container">
+                    <form action="#" method="get">
+                        <input type="text" id="search-input" placeholder="Search here...">
+                        <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                    <div class="overlay"></div>
+
+                    <div class="search-box-expanded">
+                        <form action="/search" method="get">
+                            <input type="text" placeholder="ابحث هنا..." name="search" id="search" autocomplete="on">
+                            <button type="submit" aria-label="بحث" value="بحث"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <a href="#!" id="user-icon">
+                        <img src="./images/icons8-user-24.png" id="userlogo" alt="رمز المستخدم">
+                    </a>
+
+                    <div id="popup">
+                        <button>عرض الملف</button>
+                        <button>تعديل الملف</button>
+                        <button>
+                            <a href="orders.html">
+                                قائمة الطلبات
+                            </a>
+                        </button>
+                        <button>
+                            <a href="review.html">
+                                إضافة مراجعة
+                            </a>
+                        </button>
+                    </div>
+
+
+
+                    <a href='login.html' id='login'>تسجيل الدخول</a>
+
+                    <div class='fa fa-bars' onclick='showmenu()'></div>
+                </div>
+            </nav>
+        </div>
+        <div class="job-container">
+            <h1>قائمة وظائف الشركة</h1>
+            <ul class="job-list">
+                <li><span class="job-title">اسم الوظيفة 1</span> - <span class="job-description">بيانات الوظيفة1</span>
+                </li>
+                <br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li>
+                <br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li><br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li><br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li><br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li><br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li><br>
+                <li><span class="job-title"> اسم الوظيفة</span> - <span class="job-description">بيانات الوظيفة2</span>
+                </li>
+            </ul>
+            <button id="add-job-btn" class="action-btn">إضافة وظيفة </button>
+            <button id="edit-job-btn" class="action-btn">تعديل وظيفة </button>
+        </div>
+
+        <!-- Add Job Modal -->
+        <div id="add-job-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Job</h2>
+                <input type="text" id="job-title" placeholder="Job Title">
+                <textarea id="job-description" placeholder="Job Description"></textarea>
+                <button id="save-job-btn" class="action-btn"> حفظ</button>
+            </div>
+        </div>
+
+        <div id="edit-job-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Job</h2>
+                <input type="text" id="edit-job-title" placeholder="Job Title">
+                <textarea id="edit-job-description" placeholder="Job Description"></textarea>
+                <button id="update-job-btn" class="action-btn"> تحديث</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer-first-section">
+              <div class="footer-first-section-container">
+                <div class="footer-first-section-container-row">
+                  <div class="first-one-footer">
+                    <div class="footer-info">
+                      <h3>MIS
+                        <span>.</span>
+                      </h3>
+                      <p>6536+9F4, Aleppo, Syria
+                        <br>
+                        <br>
+                        <strong>phone:+96300000000</strong>
+                        <br>
+                        <br>
+                        <strong>Email:
+                          Madeinsyria1234@gmail.com</strong>
+                      </p>
+                      <div class="footer-social">
+                        <a href="https://www.facebook.com/abdullah.zanabili"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/abdullah.zanabili"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/yahiasabouni?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/yahiasabouni?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="second-one-footer">
+                    <h4>Useful links</h4>
+                    <ul>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="https://www.apple.com">Electronics</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="https://www.shein.com">Clothes</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="https://www.shein.com">General</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="https://en.wikipedia.org">Terms of service</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="https://en.wikipedia.org/wiki/Privacy_policy#:~:text=A%20privacy%20policy%20is%20a,a%20customer%20or%20client's%20data.">Privacy policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="therd-one-footer">
+                    <h4>Our Services</h4>
+                    <ul>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#!">childrens supplies </a>
+                      </li>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#!">Doctors supplies</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#!">General supplies</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="forth-one-footer">
+                    <h4>Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="note.php" method="post">
+                      <input type="text" name="note" id="">
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-second-section">
+              <div class="footer-second-section-1">
+                &copy;Copyright
+                <strong>
+                 &nbsp; MIS. &nbsp;
+                </strong>
+                All Rights Reserved
+              </div>
+              <div class="footer-second-section-2">
+              Designed by 
+              <a href="https://bootstrapmade.com/">Made in syria</a>
+              </div>
+            </div>
+          </footer>
+        <script>
+           
+           var addJobModal = document.getElementById("add-job-modal");
+            var editJobModal = document.getElementById("edit-job-modal");
+
+            var addJobBtn = document.getElementById("add-job-btn");
+            var editJobBtn = document.getElementById("edit-job-btn");
+
+            var closeBtns = document.getElementsByClassName("close");
+
+            addJobBtn.onclick = function () {
+                addJobModal.style.display = "block";
+            }
+
+            editJobBtn.onclick = function () {
+                editJobModal.style.display = "block";
+            }
+
+            for (var i = 0; i < closeBtns.length; i++) {
+                closeBtns[i].onclick = function () {
+                    addJobModal.style.display = "none";
+                    editJobModal.style.display = "none";
+                }
+            }
+
+            window.onclick = function (event) {
+                if (event.target == addJobModal || event.target == editJobModal) {
+                    addJobModal.style.display = "none";
+                    editJobModal.style.display = "none";
+                }
+            }
+        </script>
+
+
+    </body>
+
+    </html>
